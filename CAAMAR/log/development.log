@@ -3506,3 +3506,48 @@ Processing by MainController#index as HTML
 Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 20191)
 
 
+Started GET "/" for 127.0.0.1 at 2024-06-17 16:12:12 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/login.html.erb within layouts/application
+  Rendered auth/login.html.erb within layouts/application (Duration: 0.5ms | Allocations: 202)
+  Rendered layout layouts/application.html.erb (Duration: 358.4ms | Allocations: 102823)
+Completed 200 OK in 381ms (Views: 365.9ms | ActiveRecord: 0.0ms | Allocations: 110536)
+
+
+Started GET "/main/index" for 127.0.0.1 at 2024-06-17 16:28:11 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.5ms | Allocations: 126)
+  Rendered main/index.erb within layouts/application (Duration: 2.7ms | Allocations: 528)
+  Rendered layout layouts/application.html.erb (Duration: 139.9ms | Allocations: 36694)
+Completed 200 OK in 162ms (Views: 148.5ms | ActiveRecord: 0.0ms | Allocations: 40790)
+
+
+Started GET "/main/" for 127.0.0.1 at 2024-06-17 16:28:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/main"):
+  
+Started GET "/gerenciamento/" for 127.0.0.1 at 2024-06-17 16:31:05 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 185)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 1604)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 2072)
+
+
+Started GET "/main/index" for 127.0.0.1 at 2024-06-17 16:31:18 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered main/index.erb within layouts/application (Duration: 0.4ms | Allocations: 75)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 1468)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 1717)
+
+
