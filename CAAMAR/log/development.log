@@ -3506,3 +3506,1045 @@ Processing by MainController#index as HTML
 Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 20191)
 
 
+Started GET "/" for 127.0.0.1 at 2024-06-16 20:34:37 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering auth/login.html.erb within layouts/application
+  Rendered auth/login.html.erb within layouts/application (Duration: 0.2ms | Allocations: 202)
+  Rendered layout layouts/application.html.erb (Duration: 140.5ms | Allocations: 103121)
+Completed 200 OK in 151ms (Views: 144.1ms | ActiveRecord: 0.0ms | Allocations: 110835)
+
+
+Started GET "/turmas" for 127.0.0.1 at 2024-06-16 20:34:42 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/turmas"):
+  
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:34:47 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 111)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 380)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1817)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 2277)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:36:44 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 433)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 15670)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 16618)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:38:44 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 442)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 15705)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 16648)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:39:37 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.3ms | Allocations: 109)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 476)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 15578)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 16520)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:40:19 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 502)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 15660)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 16603)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:40:42 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 521)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 15758)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 16703)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:40:49 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 517)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 15641)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 16581)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:41:04 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 511)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 15633)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 16578)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:41:20 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 508)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 15760)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 16704)
+
+
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:43:04 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1327)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1419)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2330)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `input_output_micropost_path' for #<ActionView::Base:0x00000000028af0>):
+    4:   <button>Importar dados</button>
+    5:   <button>Editar template</button>
+    6:   <button>Enviar Formulários</button>
+    7:   <%= button_to "View profile", input_output_micropost_path%>
+    8:   <button>Resultados</button>
+    9: </div> 
+  
+app/views/gerenciamento/show.html.erb:7
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:43:13 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1303)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1395)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2289)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `turmas' for #<ActionView::Base:0x0000000002c330>):
+    4:   <button>Importar dados</button>
+    5:   <button>Editar template</button>
+    6:   <button>Enviar Formulários</button>
+    7:   <%= button_to "View profile", turmas/index%>
+    8:   <button>Resultados</button>
+    9: </div> 
+  
+app/views/gerenciamento/show.html.erb:7
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:43:20 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1276)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 16310)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 17225)
+
+
+Started POST "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:43:21 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/gerenciamento"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:43:21 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 395)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1623)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1871)
+
+
+Started POST "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:43:22 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/gerenciamento"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:43:22 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 412)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1640)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1886)
+
+
+Started POST "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:43:23 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/gerenciamento"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:43:23 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 403)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1631)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1877)
+
+
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:43:59 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1302)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1394)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2284)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `turmas' for #<ActionView::Base:0x000000000339a0>):
+    4:   <button>Importar dados</button>
+    5:   <button>Editar template</button>
+    6:   <button>Enviar Formulários</button>
+    7:   <%= button_to "View profile", turmas/index %>
+    8:   <button>Resultados</button>
+    9: </div> 
+  
+app/views/gerenciamento/show.html.erb:7
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:45:32 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.3ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1302)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1394)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2287)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `turmas' for #<ActionView::Base:0x00000000037258>):
+    4:   <button>Importar dados</button>
+    5:   <button>Editar template</button>
+    6:   <button>Enviar Formulários</button>
+    7:   <%= button_to "turmas/index", turmas/index %>
+    8:   <button>Resultados</button>
+    9: </div> 
+  
+app/views/gerenciamento/show.html.erb:7
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:45:35 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1199)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 16233)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 17143)
+
+
+Started POST "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:45:36 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/gerenciamento"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:45:36 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 409)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1637)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1883)
+
+
+Started POST "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:45:37 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/gerenciamento"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:45:37 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 394)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1622)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1868)
+
+
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:46:15 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1910)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 2002)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2897)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"set_checkintime", :controller=>"gerenciamento", :method=>:put}):
+    4:   <button>Importar dados</button>
+    5:   <button>Editar template</button>
+    6:   <button>Enviar Formulários</button>
+    7:   <%= button_to "CheckIn", :action => "set_checkintime", :method => :put %>
+    8:   <button>Resultados</button>
+    9: </div> 
+  
+app/views/gerenciamento/show.html.erb:7
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:47:01 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1892)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1984)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2874)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"turmas_controller"}):
+    4:   <button>Importar dados</button>
+    5:   <button>Editar template</button>
+    6:   <button>Enviar Formulários</button>
+    7:   <%= link_to 'My Blog', controller: 'turmas_controller' %>
+    8:   <button>Resultados</button>
+    9: </div> 
+  
+app/views/gerenciamento/show.html.erb:7
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:47:50 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 939)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 16183)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 17095)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:47:52 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 337)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1749)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2237)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:47:54 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1486)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1765)
+
+
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:48:14 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1225)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 16070)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 16985)
+
+
+Started POST "/turmas/index" for 127.0.0.1 at 2024-06-16 20:48:15 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/turmas/index"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:48:15 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 409)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1637)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1883)
+
+
+Started POST "/turmas/index" for 127.0.0.1 at 2024-06-16 20:48:16 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/turmas/index"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:48:16 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 400)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1628)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1874)
+
+
+Started POST "/turmas/index" for 127.0.0.1 at 2024-06-16 20:48:16 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/turmas/index"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:48:16 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 424)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1652)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1898)
+
+
+Started POST "/turmas/index" for 127.0.0.1 at 2024-06-16 20:48:17 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/turmas/index"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:48:17 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 433)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1661)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 1907)
+
+
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:48:24 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 951)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 16219)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 17131)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:48:25 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 337)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1731)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2219)
+
+
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:48:41 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 961)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 16007)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 16922)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:48:41 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 335)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1762)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2248)
+
+
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:49:19 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 965)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 16004)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 16915)
+
+
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:50:15 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1251)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 16285)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 17200)
+
+
+Started POST "/turmas/index" for 127.0.0.1 at 2024-06-16 20:50:16 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/turmas/index"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:50:16 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 416)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1644)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1890)
+
+
+Started POST "/turmas/index" for 127.0.0.1 at 2024-06-16 20:50:16 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/turmas/index"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:50:16 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 407)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1635)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1881)
+
+
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:50:44 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1305)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1397)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2287)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_path' for #<ActionView::Base:0x0000000005b608>):
+    4:   <button>Importar dados</button>
+    5:   <button>Editar template</button>
+    6:   <button>Enviar Formulários</button>
+    7:   <%= button_to 'Enviar Formulários', users_path, controller: 'turmas' %>
+    8:   <button>Resultados</button>
+    9: </div> 
+  
+app/views/gerenciamento/show.html.erb:7
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:50:44 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 1061)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | Allocations: 1152)
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1380)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_path' for #<ActionView::Base:0x0000000005b928>):
+    4:   <button>Importar dados</button>
+    5:   <button>Editar template</button>
+    6:   <button>Enviar Formulários</button>
+    7:   <%= button_to 'Enviar Formulários', users_path, controller: 'turmas' %>
+    8:   <button>Resultados</button>
+    9: </div> 
+  
+app/views/gerenciamento/show.html.erb:7
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:51:02 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1305)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1397)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2287)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `turmas_path' for #<ActionView::Base:0x0000000005f320>):
+    4:   <button>Importar dados</button>
+    5:   <button>Editar template</button>
+    6:   <button>Enviar Formulários</button>
+    7:   <%= button_to 'Enviar Formulários', turmas_path, controller: 'turmas' %>
+    8:   <button>Resultados</button>
+    9: </div> 
+  
+app/views/gerenciamento/show.html.erb:7
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:51:19 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1303)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1395)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2285)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_path' for #<ActionView::Base:0x00000000062d90>):
+    4:   <button>Importar dados</button>
+    5:   <button>Editar template</button>
+    6:   <button>Enviar Formulários</button>
+    7:   <%= button_to 'Enviar Formulários', users_path, :method => "get" %>
+    8:   <button>Resultados</button>
+    9: </div> 
+  
+app/views/gerenciamento/show.html.erb:7
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:51:25 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1303)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1395)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2285)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `turmas_path' for #<ActionView::Base:0x00000000066800>):
+    4:   <button>Importar dados</button>
+    5:   <button>Editar template</button>
+    6:   <button>Enviar Formulários</button>
+    7:   <%= button_to 'Enviar Formulários', turmas_path, :method => "get" %>
+    8:   <button>Resultados</button>
+    9: </div> 
+  
+app/views/gerenciamento/show.html.erb:7
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:51:29 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1305)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1397)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2287)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `turma_path' for #<ActionView::Base:0x0000000006a298>):
+    4:   <button>Importar dados</button>
+    5:   <button>Editar template</button>
+    6:   <button>Enviar Formulários</button>
+    7:   <%= button_to 'Enviar Formulários', turma_path, :method => "get" %>
+    8:   <button>Resultados</button>
+    9: </div> 
+  
+app/views/gerenciamento/show.html.erb:7
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:52:02 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1332)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 16366)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 17278)
+
+
+Started POST "/turmas/index?method=get" for 127.0.0.1 at 2024-06-16 20:52:04 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/turmas/index"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:52:04 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 416)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1644)
+Completed 200 OK in 2ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1892)
+
+
+Started POST "/turmas/index?method=get" for 127.0.0.1 at 2024-06-16 20:52:04 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/turmas/index"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:52:04 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 422)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1650)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1896)
+
+
+Started POST "/turmas/index?method=get" for 127.0.0.1 at 2024-06-16 20:52:05 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/turmas/index"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:52:05 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 434)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1662)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started POST "/turmas/index?method=get" for 127.0.0.1 at 2024-06-16 20:52:05 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/turmas/index"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:52:05 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 431)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1659)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1905)
+
+
+Started POST "/turmas/index?method=get" for 127.0.0.1 at 2024-06-16 20:52:06 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/turmas/index"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:52:06 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 431)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1659)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 1905)
+
+
+Started POST "/turmas/index?method=get" for 127.0.0.1 at 2024-06-16 20:52:07 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/turmas/index"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:52:07 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 443)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1671)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1917)
+
+
+Started POST "/turmas/index?method=get" for 127.0.0.1 at 2024-06-16 20:52:07 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/turmas/index"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:52:08 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 416)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1644)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1890)
+
+
+Started POST "/turmas/index?method=get" for 127.0.0.1 at 2024-06-16 20:52:08 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/turmas/index"):
+  
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:52:08 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 425)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1653)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1899)
+
+
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 20:52:21 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1014)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 16257)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 17171)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:52:22 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 335)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1763)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2251)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:52:55 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 507)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 15548)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 16487)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:53:26 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 513)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 15748)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 16691)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:53:46 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 511)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 15792)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 16736)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:53:49 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1505)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1783)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:53:49 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1489)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1767)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:54:00 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 109)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 507)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 15582)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 16524)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:55:46 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 110)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 513)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 15757)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 16700)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:55:54 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 110)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 507)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 15786)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 16726)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:56:18 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.4ms | Allocations: 815)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1216)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 16398)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 17341)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:56:20 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 84)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1562)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1841)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:56:23 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.1ms | Allocations: 84)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1559)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1838)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:57:06 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.7ms | Allocations: 2031)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2416)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 2508)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 3429)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"gerenciamento"}):
+    13:  
+    14:   <div class="offcanvas-body">
+    15:     <%= link_to 'Avalições', controller: 'main' %>
+    16:     <%= link_to 'Gerenciamento', controller: 'gerenciamento' %>
+    17:     <%= link_to 'Turmas', controller: 'turmas' %>
+    18:   </div>
+    19: </div>
+  
+app/views/navbar/_navbar.html.erb:16
+app/views/turmas/index.html.erb:1
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:57:23 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 1.9ms | Allocations: 914)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1311)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 16545)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 17485)
+
+
+Started GET "/main/index" for 127.0.0.1 at 2024-06-16 20:57:25 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 155)
+  Rendered main/index.erb within layouts/application (Duration: 0.4ms | Allocations: 347)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1743)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 2195)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:57:27 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 151)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 234)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1641)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1920)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:58:19 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 5.4ms | Allocations: 2040)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2422)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2514)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3433)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"gerenciamento"}):
+    13:  
+    14:   <div class="offcanvas-body">
+    15:     <%= link_to 'Avaliações', controller: 'main' %>
+    16:     <%= link_to 'Gerenciamento', controller: 'gerenciamento' %>
+    17:     <%= link_to 'Turmas', controller: 'turmas' %>
+    18:   </div>
+    19: </div>
+  
+app/views/navbar/_navbar.html.erb:16
+app/views/turmas/index.html.erb:1
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:58:36 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.3ms | Allocations: 1308)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 1376)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | Allocations: 1467)
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1726)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"gerenciamento"}):
+    13:  
+    14:   <div class="offcanvas-body">
+    15:     <%= link_to 'Avaliações', controller: 'main' %>
+    16:     <%= link_to 'Gerenciamento', controller: 'gerenciamento' %>
+    17:     <%= link_to 'Turmas', controller: 'turmas' %>
+    18:   </div>
+    19: </div>
+  
+app/views/navbar/_navbar.html.erb:16
+app/views/turmas/index.html.erb:1
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 20:58:50 -0300
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:5:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 21:00:14 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.6ms | Allocations: 1005)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1404)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 16642)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 17584)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 21:00:17 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 211)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 294)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1692)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1971)
+
+
+Started GET "/main/index" for 127.0.0.1 at 2024-06-16 21:01:00 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.5ms | Allocations: 1010)
+  Rendered main/index.erb within layouts/application (Duration: 0.9ms | Allocations: 1267)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 16324)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 17227)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 21:01:01 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 215)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 545)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1950)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2436)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 21:01:10 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 211)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 294)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1698)
+Completed 200 OK in 2ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1977)
+
+
+Started GET "/gerenciamento" for 127.0.0.1 at 2024-06-16 21:01:14 -0300
+Processing by GerenciamentoController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gerenciamento/show.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 221)
+  Rendered gerenciamento/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 485)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1887)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 2351)
+
+
+Started GET "/turmas/index" for 127.0.0.1 at 2024-06-16 21:01:15 -0300
+Processing by TurmasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering turmas/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.3ms | Allocations: 211)
+  Rendered turmas/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 294)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1689)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1969)
+
+
