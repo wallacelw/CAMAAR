@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
-  get 'turmas/index'
+  resources :usuarios
+
   root 'auth#login'
-  get 'main/index'
+
+  get '/definir-senha/:id', to: 'auth#define_password'
+
   get 'gerenciamento', to: 'gerenciamento#show'
+  get 'gerenciamento/templates', to: 'gerenciamento#show_templates'
+
+  get 'turmas/index'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
