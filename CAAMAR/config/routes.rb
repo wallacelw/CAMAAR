@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   resources :usuarios
 
   root 'auth#login'
-  get 'main/index'
   get 'gerenciamento', to: 'gerenciamento#show'
+  get 'gerenciamento/templates', to: 'gerenciamento#show_templates'
   get '/definir-senha/:id', to: 'auth#define_password'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
