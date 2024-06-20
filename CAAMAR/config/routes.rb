@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get 'gerenciamento', to: 'gerenciamento#index'
   get 'gerenciamento/templates', to: 'gerenciamento#show_templates'
+  get 'gerenciamento/results_popup'
 
   get 'turmas', to: 'turmas#index'
 
