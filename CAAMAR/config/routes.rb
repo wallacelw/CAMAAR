@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   get 'gerenciamento', to: 'gerenciamento#index'
   get 'gerenciamento/templates', to: 'gerenciamento#show_templates'
 
-  get 'turmas/index'
+  get 'turmas', to: 'turmas#index'
+
+  get 'avaliacoes', to: 'avaliacoes#index'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
