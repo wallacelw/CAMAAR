@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get '/definir-senha/:id', to: 'auth#define_password'
 
-  get 'gerenciamento', to: 'gerenciamento#show'
+  get 'gerenciamento', to: 'gerenciamento#index'
   get 'gerenciamento/templates', to: 'gerenciamento#show_templates'
 
   get 'turmas/index'
