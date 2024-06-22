@@ -17,8 +17,7 @@ Rails.application.routes.draw do
   get 'turmas', to: 'turmas#index'
 
   get 'avaliacoes', to: 'avaliacoes#index'
-
-  # resource to read json files
+  
   get 'uploader', to: 'uploader#index'
 
   get 'template', to: 'template#index'
@@ -30,6 +29,7 @@ Rails.application.routes.draw do
 
   post 'delete_template', to: 'template#delete_template', as: 'delete_template'
 
+  # resource to read json files
   resources :jsonfiles do
     collection do
       post :import
