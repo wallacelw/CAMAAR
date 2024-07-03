@@ -1,0 +1,17 @@
+<h1>Estatistícas</h1>
+<div class="grid-container">
+  <%@answers.each do |answer| %>
+    <div class = "card" %>
+      <div class="field">
+        <%=answer["id"] %>
+        <% n_solved = 0 %>
+        <% form = @forms.find {|form| form["id"] == answer["form_id"]} %>
+        <% form["solvers"].each do |solver| %>
+          <% n_solved += 1 if solver["is_solved"] %>
+        <% end %>
+        solved = <%= (n_solved * 100)/form["solvers"].count %>%
+      </div>
+    </div>
+    </div>
+  <% end %>
+
