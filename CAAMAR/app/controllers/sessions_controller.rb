@@ -1,9 +1,11 @@
 class SessionsController < ApplicationController
+    # Encerra a sessão do usuário atual e redireciona para a página inicial.
     def destroy
         logout current_user
         redirect_to root_path notice: "Tu deslogou"
     end
     
+     # Autentica o usuário com base nas credenciais fornecidas e redireciona para a página apropriada.
     def create
         user = Usuario.find_by(email: params[:email],senha:params[:senha])
         if user
@@ -18,6 +20,7 @@ class SessionsController < ApplicationController
         end
     end
 
+     # Renderiza o formulário de login, opcionalmente exibindo mensagens de alerta.
     def new
         @alert_message = params[:alert_message] if params[:alert_message].present?
         @alert_message_happy = params[:alert_message_happy] if params[:alert_message_happy].present?

@@ -1,35 +1,42 @@
+
 class UsuariosController < ApplicationController
   before_action :verify_authenticity_token, :set_usuario, only: %i[ show edit update destroy ]
 
   # GET /usuarios or /usuarios.json
+  # Lista todos os usuários cadastrados.
   def index
     @usuarios = Usuario.all
   end
 
   # GET /usuarios/1 or /usuarios/1.json
+  # Exibe os detalhes de um usuário específico.
   def show
   end
 
   # GET /usuarios/new
+  # Renderiza o formulário para criar um novo usuário.
   def new
     @usuario = Usuario.new
   end
 
   # GET /usuarios/1/edit
+  # Renderiza o formulário para criar um novo usuário.
   def edit
   end
 
   # POST /usuarios or /usuarios.json
+  # Cria um novo usuário com base nos parâmetros fornecidos.
   def create
     Rails.logger.info("esse aluno: #{usuario_params}")
     @usuario = Usuario.new(usuario_params)
 
     respond_to do |format|
       if @usuario.save
-        UserMailer.with(user: @usuario).gen_password.deliver
+       # Se o usuário for salvo com sucesso, redireciona para a página do usuário com uma mensagem de sucesso.
         format.html { redirect_to(@usuario, notice: 'User was successfully created.') }
         format.json { render json: @user, status: :created, location: @user }
       else
+         # Se houver erros ao salvar, renderiza novamente o formulário de criação com os erros exibidos.
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @usuario.errors, status: :unprocessable_entity }
       end
@@ -40,11 +47,8 @@ class UsuariosController < ApplicationController
     params.require(:usuario).permit({:usuario =>[:matricula, :nome, :formacao, :email, :senha,:curso,:isAdmin,:isAluno,:isProf]})
   end
 
-  def usuario_params2
-    params.require(:usuario).permit({:usuario =>[:matricula, :nome, :formacao, :email, :senha,:senha_confirmation]})
-  end
-
   # PATCH/PUT /usuarios/1 or /usuarios/1.json
+  # Atualiza os dados de um usuário existente com base nos parâmetros fornecidos.
   def update
 
     respond_to do |format|
@@ -59,6 +63,7 @@ class UsuariosController < ApplicationController
   end
 
   # DELETE /usuarios/1 or /usuarios/1.json
+  # Remove um usuário existente do sistema.
   def destroy
     @usuario.destroy!
 
@@ -69,6 +74,8 @@ class UsuariosController < ApplicationController
   end
 
 
+  #
+  ## Pega o arquivo, extrai os alunos e cria usuários no banco
   def getJson
     file = File.read('db/json/class_members.json')
     data_hash = JSON.parse(file)
@@ -95,12 +102,13 @@ class UsuariosController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+    
+    # Configura o usuário com base no parâmetro :id.
     def set_usuario
       @usuario = Usuario.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
+    # Define os parâmetros permitidos para criação/atualização de usuários.
     def usuario_params
       params.require(:usuario).permit(:matricula, :nome, :email, :formacao,:senha,:curso, :isAdmin,:isProf,:isAluno)
     end
