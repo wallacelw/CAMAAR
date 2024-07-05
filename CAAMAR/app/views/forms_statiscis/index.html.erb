@@ -1,0 +1,35 @@
+<%= render '/navbar/navbar' %>
+<h1>Estatísticas</h1>
+
+<% if @forms.empty? %>
+  <h1 style="margin-left: auto; margin-right: auto; width: fit-content; margin-top: 1rem">Não existem formulários pendentes</h1>
+<% else %>
+  <div class="grid-container">
+    <% @forms.each do |form| %>
+      <div class="card">
+        <div class="field">
+          <h3>ID do Formulário: <%= form["id"] %></h3>
+        </div>
+        <div class="field">
+          <h4>ID do Template: <%= form["template_id"] %></h4>
+        </div>
+        <h4>Dados da Turma:</h4>
+        <div class="field">
+          Código da Matéria: <%= form["class"]["subject_code"] %>
+        </div>
+        <div class="field">
+          Semestre: <%= form["class"]["semester"] %>
+        </div>
+
+        <% n_solved = form["solvers"].count { |solver| solver["is_solved"] } %>
+
+        <div class="field">
+          <h4>Respondidos: <%= (n_solved * 100) / form["solvers"].count %>%</h4>
+        </div>
+        <div class="field">
+          <%= link_to "forms_statiscis", { action: :form, template_id: form["template_id"], form_id_to_find: form["id"] } %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>
