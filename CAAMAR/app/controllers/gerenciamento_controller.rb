@@ -1,16 +1,17 @@
 require 'zip'
 require 'csv'
 
+# Controller para a página de gerenciamento, onde o administrador pode visualizar os templates de formulários, gerar CSVs com as respostas dos formulários e visualizar os resultados dos formulários.
 class GerenciamentoController < ApplicationController
     def index
-        unless helpers.is_user_admin(nil)
+        unless helpers.is_user_admin()
             redirect_to "/"
             return
         end
     end
 
     def show_templates
-        unless helpers.is_user_admin(nil)
+        unless helpers.is_user_admin()
             redirect_to "/"
             return
         end
@@ -56,7 +57,7 @@ class GerenciamentoController < ApplicationController
         selected_form_ids.each do |form_id|
             headers = []
             rows = all_answers
-                .select { |a| a['form_id'] == form_id }
+                .select { |ans| ans['form_id'] == form_id }
                 .map do |form_answer|
                     row = {}
                     form_answer["questions"].each do |answer|
@@ -72,24 +73,26 @@ class GerenciamentoController < ApplicationController
                 rows.each { |row| csv << row.values_at(*headers) }
             end
     
-            form = all_forms.find { |f| f["id"] == form_id } # If it gets here, the form is guaranteed to exist
-            file_name = "#{form["class"]["subject_code"]} #{form["class"]["semester"]} #{form["class"]["code"]} #{form["type"]}.csv"
+            form = all_forms.find { |form| form["id"] == form_id } # If it gets here, the form is guaranteed to exist
+            form_class = form["class"]
+            file_name = "#{form_class["subject_code"]} #{form_class["semester"]} #{form_class["code"]} #{form["type"]}.csv"
             file_name = file_name.gsub(/[^0-9A-Za-z.\-]/, '_')
             csvs[file_name] = csv_string
         end
 
-        temp_dir = Rails.root.join('tmp', 'csvs')
+        r_root = Rails.root
+        temp_dir = r_root.join('tmp', 'csvs')
         FileUtils.mkdir_p(temp_dir) unless File.directory?(temp_dir)
 
         csvs.each do |file_name, csv_data|
             File.open(temp_dir.join(file_name), 'w') { |file| file.write(csv_data) }
         end
 
-        zip_file = Rails.root.join('tmp', 'CSVs.zip')
+        zip_file = r_root.join('tmp', 'CSVs.zip')
         File.delete(zip_file) if File.exist?(zip_file)
         Zip::File.open(zip_file, Zip::File::CREATE) do |zip|
-            csvs.each do |file_name, _|
-                zip.add(file_name, temp_dir.join(file_name))
+            csvs.each do |f_name, _|
+                zip.add(f_name, temp_dir.join(f_name))
             end
         end
 
