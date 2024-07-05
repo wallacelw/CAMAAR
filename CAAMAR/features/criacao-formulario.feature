@@ -14,7 +14,7 @@ Funcionalidade: Criação de formulário para docentes ou dicentes
         Quando clico em Enviar Formulários
         E seleciono o template e a turma 
         E clico no botão de enviar
-        O sistema envio o formulário para todos os alunos
+        Então O sistema envio o formulário para todos os alunos
         E mostrará uma mensagem de sucesso ao Administrador
 
     # Sad Paths
@@ -24,4 +24,4 @@ Funcionalidade: Criação de formulário para docentes ou dicentes
         E que estou na página de gerenciamento
         Quando clico em Enviar Formulários
         E não selecionei o template ou a turma
-        O sistema mostrará um pop up dizendo que não selecionei template e turma
+        Então O sistema mostrará um pop up dizendo que não selecionei template e turma

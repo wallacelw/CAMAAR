@@ -13,7 +13,7 @@ Funcionalidade: Cadastrar usuário
         E que estou na página de gerenciamento
         E que selecionei uma matéria
         Quando eu clicar no botão de convidar alunos
-        O sistema enviará um email para todo aluno da turma
+        Então O sistema enviará um email para todo aluno da turma
         E mostrará uma mensagem de sucesso ao Administrador
 
     # Sad Paths
@@ -23,5 +23,6 @@ Funcionalidade: Cadastrar usuário
         E que estou na página de gerenciamento
         E que selecionei uma matéria
         Quando eu clicar no botão de convidar alunos
-        Um aluno já está cadastrado
-        Mostrará uma mensagem ao adminstrador com informando os alunos que já foram cadastradados
+        Então Um aluno já está cadastrado
+        E Mostrará uma mensagem ao adminstrador com informando os alunos que já foram cadastradados
+
