@@ -2,6 +2,23 @@
   {
     "id": 1,
     "template_id": 0,
+    "type": "docente",
+    "class": {
+      "subject_code": "CIC0097",
+      "semester": "2021.2",
+      "code": "TA"
+    },
+    "solvers": [
+      {
+        "id": "83807519491",
+        "is_solved": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "template_id": 0,
+    "type": "discente",
     "class": {
       "subject_code": "CIC0097",
       "semester": "2021.2",
@@ -74,7 +91,7 @@
       },
       {
         "id": "190087498",
-        "is_solved": true
+        "is_solved": false
       },
       {
         "id": "202033202",
@@ -183,21 +200,6 @@
       {
         "id": "190075384",
         "is_solved": false
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "template_id": 1,
-    "class": {
-      "subject_code": "CIC0105",
-      "semester": "2024.1",
-      "code": "T02"
-    },
-    "solvers": [
-      {
-        "id": "78334926120",
-        "is_solved": true
       }
     ]
   }

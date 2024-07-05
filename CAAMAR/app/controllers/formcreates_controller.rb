@@ -27,6 +27,7 @@ class FormcreatesController < ApplicationController
                         item = {
                             "id" => forms.length() + 1,
                             "template_id" => template_id,
+                            "type" => tipo,
                             "class" => {
                                 "subject_code" => codigo,
                                 "semester" => semestre,
@@ -45,6 +46,7 @@ class FormcreatesController < ApplicationController
                         item = {
                             "id" => forms.length() + 1,
                             "template_id" => template_id,
+                            "type" => tipo,
                             "class" => {
                                 "subject_code" => codigo,
                                 "semester" => semestre,
