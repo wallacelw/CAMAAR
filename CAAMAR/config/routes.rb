@@ -16,13 +16,15 @@ Rails.application.routes.draw do
 
   # resource to read json files
   get 'uploader', to: 'uploader#index'
-
+  get "statistics", to: "forms_statiscis#index"
   resources :jsonfiles do
     collection do
       post :import
     end
   end
-
+  resources :forms_statiscis do
+    get :form, on: :collection
+  end
   # resource to create forms
   resource :formcreates do
     collection do

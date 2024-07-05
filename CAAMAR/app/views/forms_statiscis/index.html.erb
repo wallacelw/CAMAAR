@@ -25,6 +25,9 @@
         <div class="field">
           <h4>Respondidos: <%= (n_solved * 100) / form["solvers"].count %>%</h4>
         </div>
+        <div class="field">
+          <%= link_to "forms_statiscis", { action: :form, template_id: form["template_id"], form_id_to_find: form["id"] } %>
+        </div>
       </div>
     <% end %>
   </div>
