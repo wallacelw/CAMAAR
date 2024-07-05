@@ -73,7 +73,7 @@ class GerenciamentoController < ApplicationController
             end
     
             form = all_forms.find { |f| f["id"] == form_id } # If it gets here, the form is guaranteed to exist
-            file_name = "#{form["class"]["subject_code"]} #{form["class"]["semester"]} #{form["class"]["code"]}.csv"
+            file_name = "#{form["class"]["subject_code"]} #{form["class"]["semester"]} #{form["class"]["code"]} #{form["type"]}.csv"
             file_name = file_name.gsub(/[^0-9A-Za-z.\-]/, '_')
             csvs[file_name] = csv_string
         end

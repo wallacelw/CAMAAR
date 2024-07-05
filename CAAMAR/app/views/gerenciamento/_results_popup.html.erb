@@ -9,6 +9,7 @@
         <th>Nome</th>
         <th>Semestre</th>
         <th>Turma</th>
+        <th>Tipo</th>
       </tr>
 
       <% forms.each do |entry| %>
@@ -18,6 +19,7 @@
           <td><%= entry["class_data"]["code"] %></td>
           <td><%= entry["class_data"]["class"]["semester"] %></td>
           <td><%= entry["class_data"]["class"]["classCode"] %></td>
+          <td><%= entry["type"] %></td>
         </tr>
       <% end %>
     </table>
