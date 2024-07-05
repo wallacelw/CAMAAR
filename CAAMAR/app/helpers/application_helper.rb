@@ -6,7 +6,7 @@ module ApplicationHelper
     
     # TODO implement
     def get_current_user_id()
-        current_user["matricula"]
+        current_user[:matricula]
     end
 
     def get_forms_info(forms)
