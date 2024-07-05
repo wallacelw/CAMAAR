@@ -35,5 +35,14 @@ cd CAAMAR
 bundle exec cucumber
 ```
 
+**Como executar o analisador de código:**
+
+```bash
+cd CAAMAR
+bundle exec rubycritic
+```
+
+E em seguida, abrir o arquivo *tmp/rubycritic/overview.html*
+
 # Participantes e informações da organização
 - Podem ser encontradas [na Wiki](https://github.com/wallacelw/CAMAAR/wiki/Organiza%C3%A7%C3%A3o)
