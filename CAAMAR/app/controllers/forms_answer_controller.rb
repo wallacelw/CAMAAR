@@ -53,7 +53,7 @@ class FormsAnswerController < ApplicationController
     end
     answer_hash["questions"] = personal_answers
     @answers << answer_hash
-    puts "esse é o hash #{personal_answers}"
+
     File.write(answers_file_path, JSON.pretty_generate(@answers))
   end
 
