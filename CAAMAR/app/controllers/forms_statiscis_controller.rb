@@ -1,13 +1,13 @@
 class FormsStatiscisController < ApplicationController
   def index
-    @forms = JSON.parse(File.read("C:/Users/luisf/Documents/Eng Software/study/Test/db/json/forms.json"))
+    @forms = JSON.parse(File.read("db/json/forms.json"))
   end
 
   def form
-    answers = JSON.parse(File.read("C:/Users/luisf/Documents/Eng Software/study/Test/db/json/answers.json"))
-    templates = JSON.parse(File.read("C:/Users/luisf/Documents/Eng Software/study/Test/db/json/templates.json"))
+    answers = JSON.parse(File.read("db/json/answers.json"))
+    templates = JSON.parse(File.read("db/json/templates.json"))
     form_id_to_find = params["form_id_to_find"].to_i
-    @form = JSON.parse(File.read("C:/Users/luisf/Documents/Eng Software/study/Test/db/json/forms.json")).find {|form| form["id"] == form_id_to_find}
+    @form = JSON.parse(File.read("db/json/forms.json")).find {|form| form["id"] == form_id_to_find}
     @contador = {}
     @template = templates.find {|template| template["id"] == params['template_id'].to_i}
     @template["questions"].each do |question|
