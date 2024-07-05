@@ -13,7 +13,7 @@ Funcionalidade: Edição e Deleção de Templates
         Quando eu clicar no botão de editar um template
         E esse template não foi utilizado para gerar nenhum formulário
         Então o sistema irá abrir uma janela sobreposta para edição desse template
-        E, ao editar os campos desejados, o admin pode salvar esse template 
+        E ao editar os campos desejados o admin pode salvar esse template 
         E o sistema irá mostrar uma mensagem de sucesso na operação
 
     Cenário: Sucesso na deleção de um template
