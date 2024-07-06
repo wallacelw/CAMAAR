@@ -5,6 +5,9 @@ class TurmasController < ApplicationController
         return
     end
     
+    @json_classes = []
+    @json_templates = []
+
     path = 'db/json/classes.json'
     if File.file?(path)
       @json_classes = JSON.parse(File.read(path))

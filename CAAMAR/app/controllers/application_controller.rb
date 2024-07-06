@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   
     # Retorna o usuário atualmente logado.
     def current_user
-      @current_user ||= authenticate_user_from_session
+      Current.user ||= authenticate_user_from_session
     end
     helper_method :current_user
   
@@ -20,14 +20,14 @@ class ApplicationController < ActionController::Base
   
     # Realiza o login do usuário.
     def login(user)
-      @current_user = user
+      Current.user = user
       reset_session
       session[:user_id] = user.id
     end
   
     # Realiza o logout do usuário.
     def logout(user)
-      @current_user = nil
+      Current.user = nil
       reset_session
     end
   end

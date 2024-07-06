@@ -1,12 +1,10 @@
 module ApplicationHelper
-    # TODO implement
     def is_user_admin()
-        current_user[:isAdmin]
+        !current_user.nil? ? current_user[:isAdmin] : false
     end
     
-    # TODO implement
     def get_current_user_id()
-        current_user[:matricula]
+        !current_user.nil? ? current_user[:matricula] : nil
     end
 
     def get_forms_info(forms)
