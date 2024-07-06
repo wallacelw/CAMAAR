@@ -43,6 +43,7 @@ bundle exec rubycritic
 ```
 
 E em seguida, abrir o arquivo *tmp/rubycritic/overview.html*
+> Obs.: O RubyCritic faz o teste de coverage
 
 # Participantes e informações da organização
 - Podem ser encontradas [na Wiki](https://github.com/wallacelw/CAMAAR/wiki/Organiza%C3%A7%C3%A3o)
