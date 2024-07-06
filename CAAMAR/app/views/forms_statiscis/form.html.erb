@@ -1,0 +1,35 @@
+<%= render '/navbar/navbar' %>
+<h1>Estatísticas</h1>
+
+<% if @contador.empty? %>
+  <h1 style="margin-left: auto; margin-right: auto; width: fit-content; margin-top: 1rem">Não existem formulários pendentes</h1>
+<% else %>
+  <h2>Dados da Turma:</h2>
+  <%= @form["class"]["subject_code"] %>
+  <%= @form["class"]["semester"] %>
+
+  <h4>Nome do template: <%= @template["name"] %></h4>
+  <h2>Questões:</h2>
+  <% @template["questions"].each do |question| %>
+    <hr>
+    <h3>Questão <%= question["id"] %>:</h3>
+    <h4>Enunciado:</h4>
+    <%= question["prompt"] %>
+    <h4>Respostas:</h4>
+    <% if question["type"] == "open" %>
+      Exporte as respostas para ver mais
+    <% else %>
+      <% n_total_respostas = @contador[question["id"]]["n_respostas"] %>
+      <% question["options"].each do |option| %>
+        <h4>Alternativa:</h4>
+        <%= option %>
+        <% n_marcaram = @contador[question["id"]][option] %>
+        <% if n_marcaram.zero? %>
+          <h5>Ninguém marcou esta alternativa</h5>
+        <% else %>
+          <h5><%= n_marcaram %> pessoas marcaram ou aproximadamente <%=(n_marcaram * 100) / n_total_respostas %>%</h5>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>

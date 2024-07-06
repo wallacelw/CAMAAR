@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :usuarios do 
+  resources :usuarios do
     post 'getJson', on: :collection
   end
   resources :sessions
@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get 'turmas', to: 'turmas#index'
 
   get 'avaliacoes', to: 'avaliacoes#index'
-  
+
   get 'uploader', to: 'uploader#index'
 
   get 'template', to: 'template#index'
@@ -28,6 +28,11 @@ Rails.application.routes.draw do
   post 'edit_template', to: 'template#edit'
 
   post 'delete_template', to: 'template#delete_template', as: 'delete_template'
+
+  get "statistics", to: "forms_statiscis#index"
+  resources :forms_statiscis do
+    get :form, on: :collection
+  end
 
   # resource to read json files
   resources :jsonfiles do
