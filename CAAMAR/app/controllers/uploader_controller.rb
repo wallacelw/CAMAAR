@@ -1,6 +1,6 @@
 class UploaderController < ApplicationController
     def index
-        unless helpers.is_user_admin(nil)
+        unless helpers.is_user_admin()
             redirect_to "/"
             return
         end
